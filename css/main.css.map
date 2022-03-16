@@ -8,10 +8,14 @@
         "../sass/_mixins.scss",
         "../sass/_variables.scss",
         "../sass/_generals.scss",
-        "../sass/blocks/_blocks.scss",
-        "../sass/blocks/_header.scss",
-        "../sass/blocks/_main.scss",
-        "../sass/blocks/_footer.scss"
+        "../sass/index/_blocks.scss",
+        "../sass/index/_header.scss",
+        "../sass/index/_navs.scss",
+        "../sass/index/_footer.scss",
+        "../sass/single/_blocks.scss",
+        "../sass/single/_header.scss",
+        "../sass/single/_navbar.scss",
+        "../sass/single/_footer.scss"
     ],
     "names": [],
     "file": "main.css"
