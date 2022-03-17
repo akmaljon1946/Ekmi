@@ -1,0 +1,75 @@
+.hero{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 184px;
+  }
+
+  &__heading{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+   
+    text-transform: uppercase;
+    color: #343434;
+  }
+    
+  &__title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #343434;
+
+  }
+
+  &__text{
+    width: 371px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+   
+    text-transform: capitalize;
+    color: #343434;
+  }
+
+  &__price{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    color: #FF9619;
+  }
+
+  &__link-item{
+    @include link;
+    width: 288px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #FF9619;
+
+    &:hover{
+      background: #FF9619;
+      opacity: 0.7;
+    }
+  }
+   
+
+   
+
+
+
+
+}

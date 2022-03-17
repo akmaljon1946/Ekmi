@@ -1,0 +1,177 @@
+.questions{
+
+  background-color: #A9C2BE;
+  ;
+  &__wrapper{
+    position: relative;
+    display: flex;
+    
+  }
+  
+  &__box{
+    width: 470px;
+    height: 417px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+    margin-bottom: 31px;
+    margin-left: -60px;
+    padding: {
+      top: 31px;
+      right: 50px;
+      left: 50px;
+      bottom: 17px;
+    }
+    background-color: #ffffff;
+  }
+
+  &__logo{
+    position: absolute;
+    top: 15px;
+    left: 536px;
+  }
+
+  &__title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FF9619;
+  }
+
+  &__heading{
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+
+    color: #343434;
+  }
+
+  .form{
+    width: 371px;
+    display: flex;
+    flex-direction: column;
+
+    &__input{
+      border: none;
+      margin-top: 25px;
+      border-bottom: 1px solid #D1D1D1;
+      
+    }
+
+    &__checkbox{
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__check{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      margin-top: 3px;
+      border:none;
+      border: 1px solid #D1D1D1;
+      
+    }
+
+    label{
+        width: 219px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        color: #343434;
+        opacity: 0.5;
+      
+    }
+
+    &__sub{
+      width: 209px;
+      height: 43px;
+      margin: 0 auto;
+      margin-top: 29px;
+      border: none;
+      background-color: #FF9619;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+       cursor: pointer;
+        @include hov;
+  
+    }
+    
+  }
+}
+
+@media only screen and (max-width:375px) {
+    .questions{
+
+      &__img,&__logo{
+        display: none;
+      }
+
+      &__heading{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        margin-top: 10px;
+
+        color: #343434;
+      }
+
+      &__wrapper{
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 57px;
+        padding-top: 56px;
+      }
+
+      &__box{
+        width: 340px;
+        height: 320px;
+        margin: 0;
+        padding: 0;
+        padding: 22px 35px 17px 35px;
+      
+      }
+
+      .form{
+        width: 268px;
+      }
+
+      &__input{
+        margin: 0;
+        margin-top:17px;
+      }
+
+       &__checkbox{
+         margin-top: 17px;
+       }
+    }
+}
+
+      
+
+
+  
+
+
+
+    
+
+
+    
+   
+    

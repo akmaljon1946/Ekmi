@@ -1,0 +1,33 @@
+@mixin box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: #000000;
+}
+
+@mixin btn {
+       width: 209px;
+       height: 43px;
+       margin-top: 29px;
+       border: none;
+       background-color: #FF9619;
+       font-weight: 700;
+       font-size: 16px;
+       line-height: 150%;
+       text-align: center;
+       text-transform: uppercase;
+       color: #FFFFFF;
+}
+
+@mixin hov{
+  &:hover{
+    background-color: #FF9619;
+    opacity: 0.7;
+
+  }
+  
+}

@@ -1,0 +1,157 @@
+.footer{
+  &__top{
+    position: relative;
+    height: 254px;
+    background-color: #ffffff;
+  }
+
+  &__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__bottom{
+    background-color: #5B5B5B;
+  }
+
+  &__bottom-wrapper{
+    @include box;
+    padding-top: 81px;
+    padding-bottom: 80px;
+  }
+
+  &__box{
+    display: flex;
+  }
+
+  &__logo-link{
+    margin-bottom: 140px;
+  }
+
+  &__list{
+    list-style-type: none;
+    padding: 0;
+    margin-right: 92px;
+  }
+
+  &__item{
+    margin-bottom: 25px;
+  }
+
+  &__link{
+    @include link;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.16em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    padding-bottom: 90px;
+  }
+
+  &__socials{
+    width: 70px;
+    @include box;
+  }
+
+  &__tel{
+    font-family: sans-serif;
+    @include link;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__btn{
+    @include btn;
+    width: 271px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    @include hov;
+     cursor: pointer;
+  }
+
+  &__copiry{
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.16em;
+    text-transform: capitalize;
+    padding-bottom: 29px;
+    color: #FFFFFF;
+   
+  }
+
+}
+
+@media only screen and(max-width:375px) {
+  .footer{
+
+    &__top{
+      height: 148px;
+    }
+    &__img{
+      width: 223px;
+      height: 60px;
+    }
+
+    &__bottom-wrapper{
+      // height: 610px;
+      flex-direction: column;
+      padding: 63px 17px 34px 17px;
+    }
+
+    &__box{
+      order: -1;
+      padding-bottom: 51px;
+    }
+
+    &__logo-link{
+      order: 1;
+    }
+
+    &__list{
+      margin: 0;
+      margin-right: 49px;
+    }
+
+    &__list:last-child{
+      margin-right: 0;
+
+    }
+
+    &__right{
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 62px;
+      padding-top: 77px;
+    }
+
+    &__btn{
+      order: -1;
+      margin: 0;
+    }
+
+
+
+
+  }
+}
+
+  
+
+

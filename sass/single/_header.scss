@@ -1,0 +1,206 @@
+.header {
+  &__list {
+    @include box;
+    list-style-type: none;
+    margin-top: 52px;
+    margin-bottom: 63px;
+  }
+
+  &__link {
+    @include link;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #343434;
+
+    &:hover {
+      color: #FF9619;
+  }
+}
+
+
+  &__tel-img {
+    display: none;
+  }
+
+  &__lang {
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    // appearance: none;
+    cursor: pointer;
+    color: rgba(52, 52, 52, 0.7);
+  }
+
+  &__lang::after {
+    content: "xxx";
+    background-image: url(../images/arrow3.png);
+    display: block;
+    width: 12px;
+    height: 8px;
+  }
+
+
+  &__tel {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #343434;
+  }
+
+
+
+  .navs {
+    &__list {
+      padding-left: 20px;
+      padding-right: 20px;
+      @include box;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__link {
+      @include link;
+
+    }
+
+    &__link-text {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #343434;
+
+      &:hover {
+        color: #FF9619;
+      }
+
+    }
+
+  }
+
+  &__bottom {
+    @include box;
+    margin-top: 60px;
+    margin-bottom: 68px;
+  }
+
+  &__bottom-right {
+    @include box;
+  }
+
+  &__bottom-lang {
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    color: #343434;
+  }
+
+
+
+  &__bottom-btn {
+    margin-left: 20px;
+    margin-right: 43px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__bottom-input {
+    background-image: url(../images/magnifire.png);
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-position: 240px 6px;
+    width: 270px;
+    height: 36px;
+    border: 1px solid #343434;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__bottom-search {
+    border: none;
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+//header
+
+@media only screen and (max-width:375px) {
+  .header {
+    &__desktop {
+      display: none;
+    }
+
+    .navs {
+      display: none
+    }
+
+    &__bottom-lang {
+      display: none;
+    }
+
+    &__bottom-right {
+      display: none;
+    }
+
+    &__tel {
+      display: none;
+    }
+
+
+    &__mobile {
+      display: block;
+    }
+
+    &__mobile-wrapper {
+      @include box;
+      margin-bottom: 31px;
+    }
+
+    &__tel-img {
+      display: block;
+    }
+
+    &__mobile-catalog {
+      @include box;
+      margin-bottom: 30px;
+    }
+
+    &__mobile-menu {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &__mobile-btn {
+      border: none;
+      background-color: transparent;
+      padding-right: 38px;
+    }
+
+    &__mobile-lang {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 110%;
+      border: none;
+      color: #4B4844;
+    }
+
+    &__bottom-input {
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+
+  }
+}

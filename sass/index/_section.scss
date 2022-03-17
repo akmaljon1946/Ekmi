@@ -1,0 +1,171 @@
+.section{
+  &__wrapper{
+    @include box;
+  
+  }
+
+  &__left{
+    margin-right: 30px;
+  }
+
+  &__list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+  }
+
+  &__item{
+    @include box;
+    padding: 54px 11px;
+    background-color: #F2F3F5;
+
+      &:hover {
+       background-color: #F2F3F5;
+       opacity: 0.8;
+      }
+
+  }
+    
+
+
+  &__link{
+    @include box;
+    @include link;
+  }
+
+ 
+
+  &__box{
+    margin-left: 30px;
+  }
+
+  &__heading{
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #4B4844;
+
+   
+  }
+
+  &__head{
+    display: none;
+  }
+    
+  &__text{
+    width: 259px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 127.5%;
+    letter-spacing: 0.1em;
+    color: #4B4844;
+  }
+
+  &__slider{
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 73px;
+  }
+
+  &__btn{
+     cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+
+    
+  &__link-text{
+    @include link;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin: 0 auto;
+    width: 188px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 161px;
+    background-color: #ff9619;
+
+      @include hov;
+  
+  }
+
+  @media only screen and (max-width:375px) {
+    .section{
+      &__box{
+        display: none;
+      }
+
+      &__list{
+        gap:0;
+      }
+
+      &__item{
+        padding: 0;
+        padding-top: 25px;
+        padding-bottom:35px ;
+      }
+
+      // &__img{
+      //   height: 104px;
+      //   width: 50%;
+      //   overflow: hidden;
+      // }
+
+      &__img--cover{
+        width: 100%;
+       max-width: 270px;
+        min-width: 160px;
+
+        height: auto;
+        max-height: 206px;
+        min-height: 104px;
+        object-fit: cover;
+      }
+
+      &__head{
+        display: block;
+        margin: 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 75px;
+        margin-top: 5px;
+        color: #4B4844;
+      }
+    
+
+
+
+      &__text{
+
+      }
+    }
+  }
+  
+
+   
+
+
+
+
+
+
+
+
+}
