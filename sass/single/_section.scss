@@ -5,3 +5,11 @@
     padding-bottom: 199px;
   }
 }
+
+@media only screen and (max-width:375px) {
+  .section{
+    .hug-container{
+      padding-bottom: 112px;
+    }
+  }
+}

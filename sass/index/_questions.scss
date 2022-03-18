@@ -149,16 +149,26 @@
 
       .form{
         width: 268px;
-      }
+        &__input{
+          margin: 0;
+          margin-top: 18px;
+          
+        }
+        
+        
+        &__checkbox{
+          margin: 0;
+          margin-top: 10px;
+        }
 
-      &__input{
-        margin: 0;
-        margin-top:17px;
+        &__sub{
+          width: 180px;
+          height: 37px;
+          font-size: 14px;
+          margin: 0 auto;
+          margin-top: 8px;
+        }
       }
-
-       &__checkbox{
-         margin-top: 17px;
-       }
     }
 }
 

@@ -98,3 +98,25 @@
     }
   }
 }
+
+@media only screen and(max-width:375px){
+  .techno{
+    &__top{
+      max-width: 338px;
+      width: 100%;
+      // padding-bottom: 136px;
+    }
+
+    &__pdf{
+      width: 167.5px;
+      height: 47px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &__bottom{
+      display: none;
+    }
+  }
+  
+}

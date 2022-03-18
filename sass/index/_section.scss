@@ -105,6 +105,12 @@
 
   @media only screen and (max-width:375px) {
     .section{
+      .container{
+        padding: 0 17px;
+      }
+
+     
+
       &__box{
         display: none;
       }
@@ -113,27 +119,29 @@
         gap:0;
       }
 
+      &__left{
+        margin-right: 19px;
+      }
+
       &__item{
+        max-width: 166px;
+        max-height: 151px;
+        display: flex;
+        align-items: center;
         padding: 0;
         padding-top: 25px;
         padding-bottom:35px ;
       }
 
-      // &__img{
-      //   height: 104px;
-      //   width: 50%;
-      //   overflow: hidden;
-      // }
-
       &__img--cover{
         width: 100%;
-       max-width: 270px;
+        max-width: 165px;
         min-width: 160px;
-
         height: auto;
         max-height: 206px;
         min-height: 104px;
         object-fit: cover;
+
       }
 
       &__head{
@@ -148,13 +156,26 @@
         margin-top: 5px;
         color: #4B4844;
       }
-    
 
-
-
-      &__text{
-
+      &__head:last-child{
+        margin-bottom: 0;
       }
+      
+      &__slider {
+        width: 120px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      &__link-text{
+        margin-bottom: 90px;
+      
+      }
+
+
+
+    
     }
   }
   
