@@ -131,6 +131,10 @@
   &__mobile {
     display: none;
   }
+
+  &__menu{
+    display: none;
+  }
 }
 
 //header
@@ -200,6 +204,59 @@
       margin: 0 auto;
       margin-bottom: 60px;
     }
+
+    //menu
+
+      &__menu--on {
+        display: block;
+        width: 239px;
+        height: 667px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: {
+          top: 28px;
+          right: 31px;
+          left: 20px;
+          bottom: 29px;
+        }
+
+        background-color: #ffffff;
+      }
+      
+      &__menu-list{
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      
+      }
+
+      &__menu-item{
+        margin-bottom: 23px;
+
+      }
+      
+      &__menu-link{
+        @include link;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 135%;
+        color: #4B4844;
+        &:hover{
+          color: #FF9619;
+        }
+      }
+
+      &__closed--button{
+        position: absolute;
+        top: 28px;
+        right: 031px;
+      }
+   
+
+
+
+
 
 
   }

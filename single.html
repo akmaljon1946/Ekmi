@@ -43,31 +43,83 @@
           </select>
         </li>
       </ul>
-      </div><!--- End of header-desktop -->
+    </div><!--- End of header-desktop -->
+  </div><!--- End of container -->
+  <div class="header__mobile">
+    <div class="container">
+      <div class="header__mobile-wrapper">
+        <a class="header__link" href="./index.html" >
+          <img  class="header__logo" src="./images/logomobile.svg" width="111" height="34" alt="company logo">
+        </a>
+        <select class="header__lang" >
+          <option value="RU">Ru</option>
+          <option value="">Uzb</option>
+          <option value="">En</option>
+        </select>
+        <a class="header__link" href="tel:+38 (099)-638-45-37" >
+          <img class="header__tel-img" src="./images/phone (1).png" alt="phone icon" >
+          <span class="header__tel">+38 (099)-638-45-37</span>
+        </a>
+        <button class="header__mobile-menu">
+          <img class="header__mobile-img" src="./images/hambur.png" width="25" height="23" alt="menu hamburger" >
+        </button>
+      </div><!--- End of header-wrapper -->
     </div><!--- End of container -->
-
-    <div class="header__mobile">
-      <div class="container">
-        <div class="header__mobile-wrapper">
-          <a class="header__link" href="./index.html" >
-            <img  class="header__logo" src="./images/logomobile.svg" width="111" height="34" alt="company logo">
-          </a>
-          <select class="header__lang" >
-            <option value="RU">Ru</option>
-            <option value="">Uzb</option>
-            <option value="">En</option>
-          </select>
-          <a class="header__link" href="tel:+38 (099)-638-45-37" >
-            <img class="header__tel-img" src="./images/phone (1).png" alt="phone icon" >
-            <span class="header__tel">+38 (099)-638-45-37</span>
-          </a>
-          <button class="header__mobile-menu">
-            <img class="header__mobile-img" src="./images/hambur.png" width="25" height="23" alt="menu hamburger" >
-          </button>
-        </div><!--- End of header-wrapper -->
-        </div><!--- End of container -->
-      </div><!--- End of header-mobile -->
-  </header><!--- End of header -->
+  </div><!--- End of header-mobile -->
+  <div class="header__menu">
+    <img class="header__closed--button" src="./images/closebtn.png" alt="closed menu icon" >
+    <ul class="header__menu-list">
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Диваны</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Стулья </a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Кресла</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Кровати</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Матрацы</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Диваны</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >пуфы</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Эксклюзивная мебель</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Все 2D-3D модели</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Индивидуальная мебель</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >2D-3D модели</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Шоу-рум</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Страница партнеров<br>дизайнера</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Дилерам</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Контакты</a>
+      </li>
+      <li class="header__menu-item">
+        <a class="header__menu-link" href="#" >Каталог</a>
+      </li>
+    </ul>
+  </div><!--- End of header-menu -->
+</header><!--- End of header -->
 
   <div class="hero">
     <div class="container">
@@ -84,6 +136,28 @@
         </div><!--- End of hero-box -->
       </div><!--- End of hero wrapper -->
     </div><!--- End of container -->
+    <div class="modal">
+      <div class="questions">
+        <div class="questions__box">
+        <img class="questions__logo" src="./images/Оoo.png" width="118" height="120" alt="orang oval logo" >
+        <p class="questions__title">Заполните форму</p>
+        <h2 class="questions__heading">остались вопросы?</h2>
+        <form action="https://echo.htmlacademy.ru" class="form">
+          <input type="text" class="form__input" placeholder="Ваше имя*">
+          <input type="text" class="form__input" placeholder="Ваш номер телефона*">
+          <input type="text" class="form__input" placeholder="Страна">
+          <input class="form__input" type="text"  placeholder="Комментарий">
+           <div class="form__checkbox">
+              <input class="form__check" type="checkbox" >
+              <label>Подтверждая заказ, я принимаю условия пользовательского соглашения
+              </label>
+           </div>
+           <button class="form__sub" type="submit">запросить звонок</button>
+         </form>
+       </div>
+    </div>
+      </div>
+    <div class="curtain curtain"></div> 
   </div><!--- End of hero -->
   <section class="section">
     <div class="hug-container">
@@ -178,7 +252,7 @@
             </ul>
           </div>
         </div>
-        <a class="techno__link" href="#" ></a>
+        <a class="techno__link" href="#" >загрузить характеристику</a>
       </div><!--- End of techno-inner -->
     </div><!--- End of container -->
   </div><!--- End of techno -->
@@ -189,7 +263,7 @@
       <div class="questions__box">
         <img class="questions__logo" src="./images/Оoo.png" width="118" height="120" alt="orang oval logo" >
         <p class="questions__title">Заполните форму</p>
-        <h2 class="questions__heading">Хотите диван <strong></strong>  в свой интерьер?</h2>
+        <h2 class="questions__head">Хотите диван <strong> Barselona</strong>  в свой интерьер?</h2>
         <form action="https://echo.htmlacademy.ru" class="form">
           <input type="text" class="form__input" placeholder="Ваше имя*">
           <input type="text" class="form__input" placeholder="Ваш номер телефона*">
@@ -200,7 +274,7 @@
               <label>Подтверждая заказ, я принимаю условия пользовательского соглашения
               </label>
            </div>
-           <button class="form__sub" type="submit">запросить звонок</button>
+           <button class="form__submit" type="submit">запросить звонок</button>
          </form>
        </div>
        </div><!--- End of wrapper -->
@@ -222,12 +296,12 @@
         </a>
          <a class="single__link" href="#" >
            <div class="single__item">
-                <img class="section__img--cover" src="./images/image2__2_-rem.png" width="270" height="227" alt="assortiment mebel magazina" >
+                <img class="single__img--cover" src="./images/image2__2_-rem.png" width="270" height="227" alt="assortiment mebel magazina" >
             </div>
          </a>
             <a class="single__link" href="#" >
                <div class="single__item">
-               <img class="section__img" src="./images/image_4__2_-rem.png" width="267" height="176" alt="assortiment mebel magazina" >
+               <img class="single__img" src="./images/image_4__2_-rem.png" width="267" height="176" alt="assortiment mebel magazina" >
             </div>
             </a>
           </div>
@@ -303,6 +377,7 @@
        </div><!--- End of container -->
      </div>
    </footer><!--- End of footer -->
+  <script src="./js/man.js"defer></script>
 </body>
 </html>
         
