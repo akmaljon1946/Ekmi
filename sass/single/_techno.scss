@@ -30,6 +30,38 @@
 
   }
 
+   &__btn {
+     width: 390px;
+     height: 130px;
+     border: 1px solid #FF9619;
+     border-collapse: separate;
+     background-color: transparent;
+     font-weight: 300;
+     font-size: 30px;
+     line-height: 35px;
+     text-transform: capitalize;
+     color: #343434;
+
+     &:hover {
+       color: #FF9619;
+     }
+
+   }
+
+       &__btn::after {
+         content: "\e900";
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        padding-right: 15px;
+        background-color: #FF9619;
+        background-image: url(../images/Arrowe2.png);
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: 9px 9px;
+      
+       }
+
   &__bottom{
     display: flex;
     align-items: center;
@@ -199,6 +231,17 @@
       width: 340px;
       height: 53px;
     }
+
+      &__btn{
+        width: 167px;
+        height: 47px;
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+    
+  
+    
 
     &__bottom-link{
        width: 340px;

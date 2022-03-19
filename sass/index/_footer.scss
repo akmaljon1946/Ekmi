@@ -93,6 +93,16 @@
      cursor: pointer;
   }
 
+     &__btn::after {
+       content: "\e900";
+       padding-right: 25px;
+       background-image: url(../images/Arroww.png);
+       background-repeat: no-repeat;
+       background-size: auto;
+       background-position: 12px 4px;
+
+     }
+
   &__copiry{
     text-align: center;
     font-weight: 500;
