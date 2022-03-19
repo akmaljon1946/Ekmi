@@ -1,4 +1,4 @@
-.section{
+.furniture{
   .hug-container{
     max-width: 1440px;
     margin: 0 auto;
@@ -7,9 +7,25 @@
 }
 
 @media only screen and (max-width:375px) {
-  .section{
+  .furniture{
     .hug-container{
       padding-bottom: 112px;
     }
+
+    &__img{
+         width: 100%;
+         max-width: 375px;
+         min-width: 352px;
+         height: auto;
+         max-height: 306px;
+         min-height: 287px;
+         object-fit: cover;
+
+    }
+
+    &__img--off{
+      display: none;
+    }
+
   }
 }
