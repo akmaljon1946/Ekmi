@@ -282,11 +282,11 @@
         <img class="questions__logo" src="./images/Оoo.png" width="118" height="120" alt="orang oval logo" >
         <p class="questions__title">Заполните форму</p>
         <h2 class="questions__head">Хотите диван <strong> Barselona</strong>  в свой интерьер?</h2>
-        <form action="https://echo.htmlacademy.ru" class="form">
-          <input type="text" class="form__input" placeholder="Ваше имя*">
-          <input type="text" class="form__input" placeholder="Ваш номер телефона*">
-          <input type="text" class="form__input" placeholder="Страна">
-          <input class="form__input" type="text"  placeholder="Комментарий">
+        <form action="https://echo.htmlacademy.ru" method="get" class="form">
+          <input  type="text" class="form__input" name="fname" placeholder="Ваше имя*">
+          <input type="tel" class="form__input" name="phone" placeholder="Ваш номер телефона*">
+          <input type="text" class="form__input" name="country" placeholder="Страна">
+          <input class="form__input" type="text" name="comment" placeholder="Комментарий">
            <div class="form__checkbox">
               <input class="form__check" type="checkbox" >
               <label>Подтверждая заказ, я принимаю условия пользовательского соглашения
